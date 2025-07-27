@@ -5,13 +5,13 @@
 
   const persons = [
     {
-      avatar: "/person1.png",
+      avatar: "/person1.webp",
       nickname: "码农 007",
       achievement: "连续通关 “996 副本” 365 天",
       newProp: "腰椎间盘突出Ⅲ级",
     },
     {
-      avatar: "/person2.png",
+      avatar: "/person2.webp",
       nickname: "驴友",
       achievement: "解锁 195 张地图",
       newProp: "语言精通 LV8",

@@ -87,12 +87,12 @@
       border-top: none;
     }
     &::before {
-      content: "Q：";
+      content: "Q: ";
       color: var(--color-label);
     }
   }
   dd::before {
-    content: "A：";
+    content: "A: ";
     color: var(--color-label);
   }
 </style>

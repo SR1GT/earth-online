@@ -35,7 +35,7 @@
     </p>
     <h1 class="text-6xl font-bold">
       地球 Online
-      <span class="text-xl font-normal">v1.0</span>
+      <span class="text-xl font-serif">v{new Date().getFullYear()}</span>
     </h1>
     <p class="flex gap-4 items-center text-xl">
       <span>超真实物理引擎</span>
