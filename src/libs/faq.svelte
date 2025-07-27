@@ -43,8 +43,8 @@
   class="flex-col justify-center items-center gap-4"
 >
   <h2 class="text-5xl font-bold">常见问题 FAQ</h2>
-  <p class="text-label/50">如果你有任何疑问，请先查看以下常见问题解答。</p>
-  <div class="flex justify-center items-start gap-16">
+  <p class="text-label/50 mb-16 xl:mb-0">如果你有任何疑问，请先查看以下常见问题解答。</p>
+  <div class="flex flex-col lg:flex-row justify-center items-start gap-16">
     <dl>
       <dt>为什么我的「人生主线」全是支线任务？</dt>
       <dd>因为你没氪「投胎 VIP」，系统默认给你塞满「打工日常」😅</dd>

@@ -1,5 +1,21 @@
 <script>
+  import { onMount } from "svelte";
   import Favicon from "/favicon.svg";
+
+  let activeId = "",
+    navList = [
+      { id: "hero", label: "首页" },
+      { id: "features", label: "游戏特色" },
+      { id: "screenshots", label: "实机演示" },
+      { id: "requirements", label: "系统要求" },
+      { id: "faq", label: "常见问题" },
+    ];
+  const updateActiveId = () => (activeId = window.location.hash.slice(1));
+  onMount(() => {
+    updateActiveId();
+    window.addEventListener("hashchange", updateActiveId);
+    return () => window.removeEventListener("hashchange", updateActiveId);
+  });
 
   function feedback() {
     if (
@@ -16,11 +32,13 @@
     <li>
       <img src={Favicon} alt="logo" class="size-6 mx-4" />
     </li>
-    <li><a href="#hero">首页</a></li>
-    <li><a href="#features">游戏特色</a></li>
-    <li><a href="#screenshots">实机演示</a></li>
-    <li><a href="#requirements">系统要求</a></li>
-    <li><a href="#faq">常见问题</a></li>
+    {#each navList as item}
+      <li>
+        <a href={`#${item.id}`} class={activeId === item.id ? "active" : ""}>
+          {item.label}
+        </a>
+      </li>
+    {/each}
   </ul>
   <ul>
     <li>
@@ -40,5 +58,14 @@
       background-color: var(--color-highlight);
       color: var(--color-main);
     }
+  }
+  a.active,
+  a:focus {
+    background-color: color-mix(
+      in oklab,
+      transparent 10%,
+      var(--color-highlight)
+    );
+    color: var(--color-main);
   }
 </style>

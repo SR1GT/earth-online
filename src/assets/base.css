@@ -16,7 +16,7 @@ html {
 }
 
 section {
-  @apply h-screen w-full flex pt-12;
+  @apply h-screen w-full flex;
 }
 
 button {

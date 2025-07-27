@@ -6,7 +6,7 @@
   onMount(async () => new Earth3D(container));
 </script>
 
-<section id="hero" class="relative">
+<section id="hero" class="relative flex-col-reverse xl:flex-row justify-center pt-12">
   <svg class="absolute top-0 left-0 w-full h-[110%]">
     <defs>
       <linearGradient id="fadeGrad1" x1="0" y1="0" x2="0" y2="1">
@@ -26,10 +26,12 @@
       mask="url(#fadeMask1)"
     />
   </svg>
-  <div bind:this={container} class="w-3/5 h-full z-10"></div>
-  <div class="relative w-2/5 h-full flex flex-col justify-center gap-16 z-10">
+  <div bind:this={container} class="w-full xl:w-3/5 h-full z-10"></div>
+  <div
+    class="relative w-full xl:w-2/5 h-1/2 xl:h-full flex flex-col justify-center items-center xl:items-start gap-16 z-10"
+  >
     <p
-      class="absolute top-5/12 right-1/6 -translate-y-1/2 rotate-15 text-2xl text-red-500 font-bold font-serif animate-pulse"
+      class="absolute top-1/3 right-1/6 -translate-y-1/2 rotate-15 text-2xl text-red-500 font-bold font-serif animate-pulse"
     >
       警告！本游戏极度硬核
     </p>
@@ -42,6 +44,12 @@
       <span>全随机出生点</span>
       <span>强制沉浸式体验</span>
     </p>
+    <a
+      href="#features"
+      class="w-fit px-8 py-4 border border-highlight bg-highlight/10 hover:bg-highlight/50 rounded-full"
+    >
+      下滑查看更多...
+    </a>
   </div>
 </section>
 

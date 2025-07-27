@@ -58,10 +58,10 @@
 </script>
 
 <section id="screenshots" class="flex-col justify-center items-center gap-8">
-  <h2 class="flex items-center text-5xl font-bold mb-4">
+  <h2 class="flex flex-col xl:flex-row gap-4 items-center text-5xl font-bold mb-4">
     这里是
     <strong class="text-7xl text-highlight">全球玩家实况</strong>
-    ，每一秒都在真实互动！
+    每一秒都在真实互动！
   </h2>
   <div class="flex items-center gap-8 p-8 border rounded-lg">
     <h3>最新玩家动态</h3>
